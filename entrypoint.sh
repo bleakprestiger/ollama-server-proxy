@@ -3,7 +3,7 @@
 # Starting server
 echo "Starting ollama proxy server"
 #ollama serve &
-ollama_proxy_server --config ./config.ini --users_list ./authorized_users.txt --port 7860 &
+ollama_proxy_server --config ./config.ini --users_list ./authorized_users.txt --port 7860
 sleep 1
 
 # Splitting the models by comma and pulling each
