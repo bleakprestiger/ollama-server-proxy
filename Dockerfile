@@ -18,6 +18,7 @@ RUN pip3 install -e .
 COPY config.ini .
 COPY authorized_users.txt .
 COPY entrypoint.sh .
+RUN chmod +x ./entrypoint.sh
 #RUN chmod +x /entrypoint.sh
 
 # Start the proxy server as entrypoint
