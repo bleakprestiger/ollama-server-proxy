@@ -10,6 +10,7 @@ RUN apt update \
     #&& git clone https://github.com/ParisNeo/ollama_proxy_server.git
 # Change working directory to cloned git repository
 WORKDIR  ollama-server-proxy
+RUN chown root:root -R ollama-server-proxy
 #RUN chmod 777 ollama_proxy_server
 # Install all needed requirements
 RUN pip3 install -e .
